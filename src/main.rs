@@ -38,7 +38,7 @@ fn pl_choose(rng: &mut ThreadRng, vec: &mut Vec<i32>, pl_cards: &mut i32) -> boo
         return false;
     }
 
-    let mut input = String::new();
+    let mut input: String = String::new();
     println!("Сумма ваших карт: {}\n1 - Взять карту, 2 - Пас: ", pl_cards);
 
     std::io::stdin().read_line(&mut input).expect("Ошибка чтения.");
